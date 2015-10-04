@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Návestidlo</title>
+</head>
+<body>
+	<ul id="signals" class="control-select">
+		<li id="caution" class="active">Výstraha</li>
+		<li id="proceed">Voľno</li>
+		<li id="stop">Stoj</li>
+		<li id="shunt">Posun povolený</li>
+		<li id="stop-shunt">Jazda na privolávačku</li>
+		<li id="40kmh-caution">40 kmh a výstraha</li>
+		<li id="40kmh-proceed">40 kmh a voľno</li>
+		<li id="40kmh-await-40kmh">40 kmh a očakávaj 40 kmh</li>
+		<li id="40kmh-await-60kmh">40 kmh a očakávaj 60 kmh</li>
+		<li id="40kmh-await-80kmh">40 kmh a očakávaj 80 kmh</li>
+		<li id="40kmh-await-100kmh">40 kmh a očakávaj 100 kmh</li>
+		<li id="60kmh-caution" class="no-access-when-less-than-60">60 kmh a výstraha</li>
+		<li id="60kmh-proceed" class="no-access-when-less-than-60">60 kmh a voľno</li>
+		<li id="60kmh-await-40kmh" class="no-access-when-less-than-60">60 kmh a očakávaj 40 kmh</li>
+		<li id="60kmh-await-60kmh" class="no-access-when-less-than-60">60 kmh a očakávaj 60 kmh</li>
+		<li id="60kmh-await-80kmh" class="no-access-when-less-than-60">60 kmh a očakávaj 80 kmh</li>
+		<li id="60kmh-await-100kmh" class="no-access-when-less-than-60">60 kmh a očakávaj 100 kmh</li>
+		<li id="80kmh-caution" class="no-access-when-less-than-80">80 kmh a výstraha</li>
+		<li id="80kmh-proceed" class="no-access-when-less-than-80">80 kmh a voľno</li>
+		<li id="80kmh-await-40kmh" class="no-access-when-less-than-80">80 kmh a očakávaj 40 kmh</li>
+		<li id="80kmh-await-60kmh" class="no-access-when-less-than-80">80 kmh a očakávaj 60 kmh</li>
+		<li id="80kmh-await-80kmh" class="no-access-when-less-than-80">80 kmh a očakávaj 80 kmh</li>
+		<li id="80kmh-await-100kmh" class="no-access-when-less-than-80">80 kmh a očakávaj 100 kmh</li>
+		<li id="100kmh-caution" class="no-access-when-less-than-100">100 kmh a výstraha</li>
+		<li id="100kmh-proceed" class="no-access-when-less-than-100">100 kmh a voľno</li>
+		<li id="100kmh-await-40kmh" class="no-access-when-less-than-100">100 kmh a očakávaj 40 kmh</li>
+		<li id="100kmh-await-60kmh" class="no-access-when-less-than-100">100 kmh a očakávaj 60 kmh</li>
+		<li id="100kmh-await-80kmh" class="no-access-when-less-than-100">100 kmh a očakávaj 80 kmh</li>
+		<li id="100kmh-await-100kmh" class="no-access-when-less-than-100">100 kmh a očakávaj 100 kmh</li>
+	</ul>
+	<div class="signal-container">
+		<div id="Ab" class="signal signal-pre">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="Ab-caution" class="signal-light signal-orange"></div>
+				<div id="Ab-proceed" class="signal-light signal-green signal-on"></div>
+				<div id="Ab-stop" class="signal-light signal-red"></div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">232</div>
+			<div class="autoblok-last">
+				<div class="outer-circle">
+					<div class="inner-circle"></div>
+				</div>
+			</div>
+			<div class="rod-lower"></div>
+		</div>
+		<div id="PrL" class="signal signal-pre">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="PrL-caution" class="signal-light signal-orange"></div>
+				<div id="PrL-proceed" class="signal-light signal-green signal-on"></div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">PrL</div>
+			<div class="rod-lower"></div>
+		</div>
+		<div id="L" class="signal signal-entrance signal-smaller">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="signal-caution" class="signal-light signal-orange signal-on"></div>
+				<div id="signal-proceed" class="signal-light signal-green"></div>
+				<div id="signal-stop" class="signal-light signal-red"></div>
+				<div id="signal-shunt" class="signal-light signal-white"></div>
+				<div id="signal-40kmh" class="signal-light signal-orange"></div>
+					<div id="signal-60kmh" class="signal-row show-if-speed-more-than-40">
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+					</div>
+					<div id="signal-100kmh" class="signal-row show-if-speed-more-than-60">
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+					</div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">L</div>
+			<div class="rod-lower">
+				<div class="type-plate white"></div>
+				<div class="type-plate red"></div>
+				<div class="type-plate white"></div>
+				<div class="type-plate red"></div>
+			</div>
+		</div>
+		<div id="L2" class="signal signal-exit-2 signal-smallest">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="L2-proceed" class="signal-light signal-green"></div>
+				<div id="L2-stop" class="signal-light signal-red signal-on"></div>
+				<div id="L2-shunt" class="signal-light signal-white"></div>
+				<div id="L2-40kmh" class="signal-light signal-orange"></div>
+					<div id="signal-60kmh" class="signal-row show-if-speed-more-than-40">
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+					</div>
+					<div id="signal-100kmh" class="signal-row show-if-speed-more-than-60">
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+					</div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">L3</div>
+			<div class="rod-lower">
+				<div class="type-plate red"></div>
+				<div class="type-plate white small"></div>
+				<div class="type-plate red"></div>
+				<div class="type-plate white small"></div>
+				<div class="type-plate red"></div>
+			</div>
+		</div>
+		<div id="L1" class="signal signal-exit-1 signal-smallest">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="L1-proceed" class="signal-light signal-green"></div>
+				<div id="L1-stop" class="signal-light signal-red signal-on"></div>
+				<div id="L1-shunt" class="signal-light signal-white"></div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">L1</div>
+			<div class="rod-lower">
+				<div class="type-plate red"></div>
+				<div class="type-plate white small"></div>
+				<div class="type-plate red"></div>
+				<div class="type-plate white small"></div>
+				<div class="type-plate red"></div>
+			</div>
+		</div>
+		<div id="L3" class="signal signal-exit-3 signal-smallest">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="L3-proceed" class="signal-light signal-green"></div>
+				<div id="L3-stop" class="signal-light signal-red signal-on"></div>
+				<div id="L3-shunt" class="signal-light signal-white"></div>
+				<div id="L3-40kmh" class="signal-light signal-orange"></div>
+					<div id="signal-60kmh" class="signal-row show-if-speed-more-than-40">
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+						<div class="signal-light signal-orange"></div>
+					</div>
+					<div id="signal-100kmh" class="signal-row show-if-speed-more-than-60">
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+						<div class="signal-light signal-green"></div>
+					</div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">L3</div>
+			<div class="rod-lower">
+				<div class="type-plate red"></div>
+				<div class="type-plate white small"></div>
+				<div class="type-plate red"></div>
+				<div class="type-plate white small"></div>
+				<div class="type-plate red"></div>
+			</div>
+		</div>
+		<div id="Se1" class="signal signal-shunt signal-smallest">
+			<div class="signal-plate-top"></div>
+			<div class="signal-plate">
+				<div id="Se1-stop" class="signal-light signal-blue signal-on"></div>
+				<div id="Se1-shunt" class="signal-light signal-white"></div>
+			</div>
+			<div class="signal-plate-bottom"></div>
+			<div class="rod-upper">Se1</div>
+			<div class="rod-lower">
+				<div class="type-plate white"></div>
+				<div class="type-plate blue"></div>
+				<div class="type-plate white"></div>
+				<div class="type-plate blue"></div>
+			</div>
+		</div>
+	</div>
+	<div class="settings-panel">
+		<div>
+			<h4>Rýchlosť cez výhybky</h4>
+			<input id="switch-speed" type="range" value="40" min="40" max="100" step="20" list="speed-values">
+			<datalist id="speed-values">
+				<option>40</option>
+				<option>60</option>
+				<option>80</option>
+				<option>100</option>
+			</datalist>
+		</div>
+		<div>
+			<h4>Výber aktívnej koľaje</h4>
+			<select id="active-track">
+				<option disabled>-- Liché koľaje</option>
+				<option value="tracksTrack1Active">1. koľaj</option>
+				<option value="tracksTrack3Active">3. koľaj</option>
+				<option value="tracksTrack5Active">5. koľaj</option>
+				<option disabled>-- Sudé koľaje</option>
+				<option value="tracksTrack2Active">2. koľaj</option>
+			</select>
+		</div>
+		<div>
+			<h4>Schéma koľajiska</h4>
+			<img id="tracks-scheme" src="tracks.svg">
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="signals.js"></script>
+</body>
+</html>

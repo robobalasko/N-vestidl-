@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="200" height="500" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+	
+	<line id="tr1" x1="50px" y1="50px" x2="50px" y2="450px" style="stroke:#333;stroke-width:2"/>
+	<line id="sw7" x1="50px" y1="60px" x2="70px" y2="90px" style="stroke:#333;stroke-width:2"/>
+	<line id="tr3" x1="70px" y1="90px" x2="70px" y2="410px" style="stroke:#333;stroke-width:2"/>
+	<line id="tr5" x1="90px" y1="120px" x2="90px" y2="370px" style="stroke:#333;stroke-width:2"/>
+	<line id="sw6" x1="70px" y1="90px" x2="90px" y2="120px" style="stroke:#333;stroke-width:2"/>
+	<line id="tr2" x1="30px" y1="130px" x2="30px" y2="370px" style="stroke:#333;stroke-width:2"/>
+	<line id="sw4" x1="50px" y1="100px" x2="30px" y2="130px" style="stroke:#333;stroke-width:2"/>
+	<line id="sw1" x1="70px" y1="410px" x2="50" y2="440" style="stroke:#333;stroke-width:2"/>
+	<line id="sw2" x1="30px" y1="370px" x2="50px" y2="410px" style="stroke:#333;stroke-width:2"/>
+	<line id="sw3" x1="90px" y1="370px" x2="70px" y2="410px" style="stroke:#333;stroke-width:2"/>
+
+	
+	<!-- Aktívna koľaj 2 -->
+	<line id="sw2" class="track-2-active" x1="30px" y1="370px" x2="50px" y2="410px" style="stroke:#000;stroke-width:5"/>
+	<line id="sw4" class="track-2-active" x1="50px" y1="100px" x2="30px" y2="130px" style="stroke:#000;stroke-width:5"/>
+	
+	<line id="tr2" class="track-3-active" x1="30px" y1="130px" x2="30px" y2="370px" style="stroke:#000;stroke-width:5"/>
+
+
+
+</svg>
